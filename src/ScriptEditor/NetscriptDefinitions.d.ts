@@ -7081,6 +7081,16 @@ interface UserInterface {
    * @returns A map of alias names to an object containing the substitution string and if the alias was set to global.
    */
   getAllAliases(): Map<string, { substitution: string; isGlobal: boolean }>;
+
+  /**
+   * Render a ReactNode in the main content area.
+   *
+   * @remarks
+   * RAM cost: 0 GB
+   *
+   * @param node - The node to be rendered.
+   */
+  renderPage(node: ReactNode): void;
 }
 
 /**
